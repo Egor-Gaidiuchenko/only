@@ -1,11 +1,11 @@
 ### Запуск проекта
 1. Клонируйте проект
 ```bash
-git clone https://github.com/teplokotov/only-test-app.git
+git clone https://github.com/Egor-Gaidiuchenko/only.git
 ```
 2. Перейдите в директорию проекта
 ```bash
-cd only-test-app
+cd timeline-module
 ```
 3. Установите модули
 ```bash
