@@ -19,3 +19,5 @@ npm start
 ```bash
 http://localhost:3000
 ```
+
+Или просо посмотретее развернутый проект на Github Pages https://egor-gaidiuchenko.github.io/only/
