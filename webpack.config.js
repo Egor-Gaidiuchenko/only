@@ -1,19 +1,9 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import type { Configuration as WebpackConfiguration } from 'webpack';
-import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-interface Configuration extends WebpackConfiguration {
-  devServer?: DevServerConfiguration;
-}
-
-const config: Configuration = {
+/** @type {import('webpack').Configuration} */
+const config = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -52,4 +42,4 @@ const config: Configuration = {
   mode: 'development',
 };
 
-export default config;
+module.exports = config;
